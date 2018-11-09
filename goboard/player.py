@@ -31,7 +31,7 @@ class Human(Player):
     def __init__(self, color, **kwargs):
         super(Human, self).__init__(color, **kwargs)
 
-    def get_action(self, board: Board, timeout):
+    def get_action(self, board: Board):
         x, y = self.gui.get_put_index()
         return x, y
 
